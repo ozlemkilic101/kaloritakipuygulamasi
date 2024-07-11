@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="8dp"
+    tools:context=".uyeolma">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/uyeol"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtkayit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/transparent"
+                android:text="ÜYE OL"
+                android:textColor="@android:color/white"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="387dp"
+        android:layout_height="784dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="783dp"
+            tools:layout_editor_absoluteY="1dp">
+
+
+            <EditText
+                android:id="@+id/txtad"
+                android:layout_width="316dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="336dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="Adınızı giriniz :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtsoyad"
+                android:layout_width="316dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="Soyadınızı giriniz :"
+                app:layout_constraintEnd_toEndOf="@+id/txtad"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtad"
+                app:layout_constraintTop_toBottomOf="@+id/txtad" />
+
+            <EditText
+                android:id="@+id/txtyas"
+                android:layout_width="316dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="Yaşınızı giriniz :"
+                app:layout_constraintEnd_toEndOf="@+id/txtsoyad"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtsoyad"
+                app:layout_constraintTop_toBottomOf="@+id/txtsoyad" />
+
+            <EditText
+                android:id="@+id/txtcinsiyet"
+                android:layout_width="316dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="Cinsiyetini giriniz:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/txtyas"
+                app:layout_constraintTop_toBottomOf="@+id/txtyas" />
+
+            <EditText
+                android:id="@+id/txtkilo"
+                android:layout_width="316dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="Kilonuzu giriniz :"
+                app:layout_constraintStart_toStartOf="@id/txtcinsiyet"
+                app:layout_constraintTop_toBottomOf="@+id/txtcinsiyet" />
+
+            <EditText
+                android:id="@+id/txtboy"
+                android:layout_width="316dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="Boyunuzu giriniz :"
+                app:layout_constraintStart_toStartOf="@+id/txtkilo"
+                app:layout_constraintTop_toBottomOf="@+id/txtkilo" />
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="316dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="E mail adresinizi giriniz :"
+                app:layout_constraintEnd_toEndOf="@+id/txtsoyad"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtboy"
+                app:layout_constraintTop_toBottomOf="@+id/txtboy" />
+
+            <EditText
+                android:id="@+id/txtsifre"
+                android:layout_width="316dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:hint="Şifrenizi giriniz :"
+                app:layout_constraintEnd_toEndOf="@+id/txtsoyad"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtemail"
+                app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+
+            <Button
+                android:id="@+id/btnolustur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="140dp"
+                android:backgroundTint="@color/greyfurt"
+                android:gravity="center"
+                android:onClick="kayitol"
+                android:text="Oluştur"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/txtsifre" />
+
+            <TextView
+                android:id="@+id/txtbos"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnolustur" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
